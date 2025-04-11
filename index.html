@@ -14,6 +14,21 @@
 
     <main>
         <h1>Productos</h1>
+
+        <!-- Example single danger button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-warning">Categorias </button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" id="ulMenu">
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Todas</a></li>
+            </ul>
+        </div><!--btn-group-->
+
         <div style="display: flex; justify-content: center;">
             <div id="contenedor-productos" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
 
