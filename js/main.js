@@ -1,6 +1,5 @@
 const main = document.getElementsByTagName("main").item(0);
-const mainProds = document.getElementById("contenedor-productos");
-
+const mainProds = document.getElementById("mainProds");
 const ulMenu = document.getElementById("ulMenu");
 
 const URLMain = "https://fakestoreapi.com/products/";
@@ -34,7 +33,7 @@ function getCategories() {
                     ulMenu.insertAdjacentHTML("afterbegin",
                         `
                         <li>
-                            <a class = "dropdown-item" onclick = "getData('category/${cat}');" href = "#">
+                            <a class = "dropdown-item" onclick = "getData('category/${cat.replace("'", "%27")}');" href = "#">
                                 ${cat}
                             </a>
                         </li>
